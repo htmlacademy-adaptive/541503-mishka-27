@@ -21,7 +21,7 @@
   <body class="page__body">
     <header class="page__header page-header" id="header">
       <nav class="page-header__main-nav page-header__main-nav--opened container">
-        <div class="page-header__top">
+        <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html">
             <picture>
               <source media=" (min-width: 1440px) " srcset="img/mishka-logo-desktop.svg 1x, img/mishka-logo-desktop.svg 2x">
@@ -33,34 +33,34 @@
             <span class="page-header__burger"></span>
             <span class="visually-hidden">Открыть/закрыть меню сайта</span>
           </button>
-          <ul class="page-header__main-site-menu">
-            <li class="page-header__main-site-menu-item">
-              <a class="page-header__main-site-menu-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="page-header__main-site-menu-item">
-              <a class="page-header__main-site-menu-link" href="form.html">Вязание на&nbsp;заказ</a>
-            </li>
-          </ul>
-          <ul class="page-header__user-menu">
-            <li class="page-header__user-menu-item">
-              <a class="page-header__user-menu-link page-header__user-menu-link" href="catalog.html">
-                <svg class="page-header__user-menu-link-image page-header__user-menu-link-image--search" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" role="img" aria-label="Иконка поиска (увеличительное стекло)." fill="none">
-                  <use xlink:href="img/sprite.svg#search-icon"></use>
-                </svg>
-                <span class="page-header__user-menu-link-inscription">Поиск по&nbsp;сайту</span>
-              </a>
-            </li>
-            <li class="page-header__user-menu-item">
-              <a class="page-header__user-menu-link" href="form.html">
-                <svg class="page-header__user-menu-link-image page-header__user-menu-link-image--cart" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" role="img" aria-label="Иконка корзины." fill="none">
-                  <use xlink:href="img/sprite.svg#cart-icon"></use>
-                </svg>
-                <span class="page-header__user-menu-link-inscription">Корзина:</span>
-                <span class="page-header__user-menu-link-quantity">пока пуста</span>
-              </a>
-            </li>
-          </ul>
         </div>
+        <ul class="page-header__main-site-menu">
+          <li class="page-header__main-site-menu-item">
+            <a class="page-header__main-site-menu-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="page-header__main-site-menu-item">
+            <a class="page-header__main-site-menu-link" href="form.html">Вязание на&nbsp;заказ</a>
+          </li>
+        </ul>
+        <ul class="page-header__user-menu">
+          <li class="page-header__user-menu-item">
+            <a class="page-header__user-menu-link page-header__user-menu-link" href="catalog.html">
+              <svg class="page-header__user-menu-link-image page-header__user-menu-link-image--search" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" role="img" aria-label="Иконка поиска (увеличительное стекло)." fill="none">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
+              <span class="page-header__user-menu-link-inscription">Поиск по&nbsp;сайту</span>
+            </a>
+          </li>
+          <li class="page-header__user-menu-item">
+            <a class="page-header__user-menu-link" href="form.html">
+              <svg class="page-header__user-menu-link-image page-header__user-menu-link-image--cart" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" role="img" aria-label="Иконка корзины." fill="none">
+                <use xlink:href="img/sprite.svg#cart-icon"></use>
+              </svg>
+              <span class="page-header__user-menu-link-inscription">Корзина:</span>
+              <span class="page-header__user-menu-link-quantity">пока пуста</span>
+            </a>
+          </li>
+        </ul>
         <ul class="page-header__additional-site-menu">
           <li class="page-header__additional-site-menu-item">
             <a class="page-header__additional-site-menu-link" href="catalog.html">Новые поступления</a>
@@ -209,106 +209,108 @@
         </div>
       </section>
       <section class="page__contacts contacts">
-        <div class="contacts__main-content">
-          <h2 class="contacts__section-title">Контакты</h2>
-          <dl class="contacts__list-description">
-            <div class="contacts__list-description-item">
-              <dt class="contacts__list-description-term" lang="en">e-mail:</dt>
-              <dd class="contacts__list-description-definition">
-                <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </dd>
-            </div>
-            <div class="contacts__list-description-item">
-              <dt class="contacts__list-description-term">адрес:</dt>
-              <dd class="contacts__list-description-definition">
-                <address class="contacts__address">г.&nbsp;Санкт-Петербург<br>ул.&nbsp;Большая Конюшенная<br>д.&nbsp;19/8, офис&nbsp;101</address>
-              </dd>
-            </div>
-          </dl>
-        </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3735854231495!2d30.32140674452788!3d59.93880958678194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2suk!4v1677795073109!5m2!1sru!2suk" width="320" height="455" name="Карта Санкт-Петербурга." allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Расположение Большой Конюшенной 19/8 на карте Санкт-Петербурга."></iframe>
-        <noscript class="contacts__image-wrapper">
-          <picture>
-            <source type="image/webp" media=" (min-width: 1440px) " srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media=" (min-width: 768px) " srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-            <source media=" (min-width: 1440px) " srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media=" (min-width: 768px) " srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="455" alt="Расположение ул. Большой Конюшенной, дом 19/8 на карте Санкт-Петербурга">
-          </picture>
-        </noscript>
-        <a class="contacts__button button button--size-m" href="#">Напишите нам</a>
-      </section>
-      <footer class="page-footer">
-        <div class="page-footer__wrapper container">
-          <div class="page-footer__logo-wrapper">
-            <a class="page-footer__logo" href="index.html#header">
-              <svg class="page-footer__logo-image" xmlns="http://www.w3.org/2000/svg" width="102" height="35" viewBox="0 0 102 35" role="img" aria-label="Логотип-надпись Мишка." fill="none">
-                <use xlink:href="img/sprite.svg#logo-footer"></use>
-              </svg>
-              <span class="visually-hidden">Логотип-надпись Мишка</span>
-            </a>
+        <div class="contacts__wrapper container">
+          <div class="contacts__main-content">
+            <h2 class="contacts__section-title">Контакты</h2>
+            <dl class="contacts__list-description">
+              <div class="contacts__list-description-item">
+                <dt class="contacts__list-description-term" lang="en">e-mail:</dt>
+                <dd class="contacts__list-description-definition">
+                  <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                </dd>
+              </div>
+              <div class="contacts__list-description-item">
+                <dt class="contacts__list-description-term">адрес:</dt>
+                <dd class="contacts__list-description-definition">
+                  <address class="contacts__address">г.&nbsp;Санкт-Петербург<br>ул.&nbsp;Большая Конюшенная<br>д.&nbsp;19/8, офис&nbsp;101</address>
+                </dd>
+              </div>
+            </dl>
           </div>
-          <ul class="socials-list">
-            <li class="socials-list__item">
-              <a class="socials-list__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="23" viewBox="0 0 29 23" role="img" aria-label="Логотип ВКонтакте." fill="none">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="socials-list__item">
-              <a class="socials-list__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="23" viewBox="0 0 29 23" role="img" aria-label="Логотип Ютуба." fill="none">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#youtube"></use>
-                </svg>
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-            <li class="socials-list__item">
-              <a class="socials-list__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="23" viewBox="0 0 29 23" role="img" aria-label="Логотип Телеграма." fill="none">
-                  <use xlink:href="img/sprite.svg#telegram"></use>
-                </svg>
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-          </ul>
-          <a class="page-footer__html-academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <span class="page-footer__html-academy-link-inscription">Разработано</span>
-            <svg class="page-footer__html-academy-link-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35" role="img" aria-label="Логотип html-Академии." fill="none">
-              <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3735854231495!2d30.32140674452788!3d59.93880958678194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2suk!4v1677795073109!5m2!1sru!2suk" width="320" height="455" name="Карта Санкт-Петербурга." allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Расположение Большой Конюшенной 19/8 на карте Санкт-Петербурга."></iframe>
+          <noscript class="contacts__image-wrapper">
+            <picture>
+              <source type="image/webp" media=" (min-width: 1440px) " srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media=" (min-width: 768px) " srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+              <source media=" (min-width: 1440px) " srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media=" (min-width: 768px) " srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="455" alt="Расположение ул. Большой Конюшенной, дом 19/8 на карте Санкт-Петербурга">
+            </picture>
+          </noscript>
+          <a class="contacts__button button button--size-m" href="#">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo" href="index.html#header">
+            <svg class="page-footer__logo-image" xmlns="http://www.w3.org/2000/svg" width="102" height="35" viewBox="0 0 102 35" role="img" aria-label="Логотип-надпись Мишка." fill="none">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
-            <span class="visually-hidden">HTML Академия</span>
+            <span class="visually-hidden">Логотип-надпись Мишка</span>
           </a>
         </div>
-      </footer>
-      <div class="page__modal-container modal-container">
-        <div class="modal-container__modal">
-          <h2 class="modal-container__section-title">Добавить в&nbsp;корзину</h2>
-          <form class="modal-container__form modal-container-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="modal-container-form__group modal-container-group">
-              <legend class="modal-container-group__title">Выберите размер:</legend>
-              <div class="modal-container-group__checkboxes-wrapper">
-                <div class="modal-container-group__box">
-                  <input class="visually-hidden" id="modal-size-s" name="size-s" type="checkbox" checked>
-                  <label class="modal-container-group__label" for="modal-size-s">S</label>
-                </div>
-                <div class="modal-container-group__box">
-                  <input class="visually-hidden" id="modal-size-m" name="size-m" type="checkbox">
-                  <label class="modal-container-group__label" for="modal-size-m">M</label>
-                </div>
-                <div class="modal-container-group__box">
-                  <input class="visually-hidden" id="modal-size-l" name="size-l" type="checkbox">
-                  <label class="modal-container-group__label" for="modal-size-l">L</label>
-                </div>
-              </div>
-            </fieldset>
-            <button class="button button--modal" type="submit">ОК</button>
-          </form>
-        </div>
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="23" viewBox="0 0 29 23" role="img" aria-label="Логотип ВКонтакте." fill="none">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="23" viewBox="0 0 29 23" role="img" aria-label="Логотип Ютуба." fill="none">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="23" viewBox="0 0 29 23" role="img" aria-label="Логотип Телеграма." fill="none">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__html-academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="page-footer__html-academy-link-inscription">Разработано</span>
+          <svg class="page-footer__html-academy-link-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35" role="img" aria-label="Логотип html-Академии." fill="none">
+            <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+          </svg>
+          <span class="visually-hidden">HTML Академия</span>
+        </a>
       </div>
-    </main>
+    </footer>
+    <div class="page__modal-container modal-container">
+      <div class="modal-container__modal">
+        <h2 class="modal-container__section-title">Добавить в&nbsp;корзину</h2>
+        <form class="modal-container__form modal-container-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal-container-form__group modal-container-group">
+            <legend class="modal-container-group__title">Выберите размер:</legend>
+            <div class="modal-container-group__checkboxes-wrapper">
+              <div class="modal-container-group__box">
+                <input class="visually-hidden" id="modal-size-s" name="size-s" type="checkbox" checked>
+                <label class="modal-container-group__label" for="modal-size-s">S</label>
+              </div>
+              <div class="modal-container-group__box">
+                <input class="visually-hidden" id="modal-size-m" name="size-m" type="checkbox">
+                <label class="modal-container-group__label" for="modal-size-m">M</label>
+              </div>
+              <div class="modal-container-group__box">
+                <input class="visually-hidden" id="modal-size-l" name="size-l" type="checkbox">
+                <label class="modal-container-group__label" for="modal-size-l">L</label>
+              </div>
+            </div>
+          </fieldset>
+          <button class="button button--modal" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
