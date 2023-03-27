@@ -20,9 +20,9 @@
   </head>
   <body class="page__body">
     <header class="page__header page-header" id="header">
-      <nav class="page-header__main-nav page-header__main-nav--opened container">
+      <nav class="page-header__main-nav page-header__main-nav--opened">
         <div class="page-header__logo-wrapper">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" tabindex="3">
             <picture>
               <source media=" (min-width: 1440px) " srcset="img/mishka-logo-desktop.svg 1x, img/mishka-logo-desktop.svg 2x">
               <source media=" (min-width: 768px) " srcset="img/mishka-logo-tablet.svg 1x, img/mishka-logo-tablet.svg 2x">
@@ -36,43 +36,43 @@
         </div>
         <ul class="page-header__main-site-menu">
           <li class="page-header__main-site-menu-item">
-            <a class="page-header__main-site-menu-link" href="catalog.html">Каталог товаров</a>
+            <a class="page-header__main-site-menu-link" href="catalog.html" tabindex="1">Каталог товаров</a>
           </li>
           <li class="page-header__main-site-menu-item">
-            <a class="page-header__main-site-menu-link" href="form.html">Вязание на&nbsp;заказ</a>
+            <a class="page-header__main-site-menu-link" href="form.html" tabindex="2">Вязание на&nbsp;заказ</a>
           </li>
         </ul>
         <ul class="page-header__user-menu">
           <li class="page-header__user-menu-item">
-            <a class="page-header__user-menu-link page-header__user-menu-link" href="catalog.html">
+            <a class="page-header__user-menu-link" href="#" tabindex="4">
               <svg class="page-header__user-menu-link-image page-header__user-menu-link-image--search" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" role="img" aria-label="Иконка поиска (увеличительное стекло)." fill="none">
                 <use xlink:href="img/sprite.svg#search-icon"></use>
               </svg>
-              <span class="page-header__user-menu-link-inscription">Поиск по&nbsp;сайту</span>
+              <span class="page-header__user-menu-link-inscription page-header__user-menu-link-inscription--hidden">Поиск по&nbsp;сайту</span>
             </a>
           </li>
           <li class="page-header__user-menu-item">
-            <a class="page-header__user-menu-link" href="form.html">
+            <a class="page-header__user-menu-link page-header__user-menu-link--full-text" href="#" tabindex="5">
               <svg class="page-header__user-menu-link-image page-header__user-menu-link-image--cart" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" role="img" aria-label="Иконка корзины." fill="none">
                 <use xlink:href="img/sprite.svg#cart-icon"></use>
               </svg>
               <span class="page-header__user-menu-link-inscription">Корзина:</span>
-              <span class="page-header__user-menu-link-quantity">пока пуста</span>
+              <span class="page-header__user-menu-link-quantity"> пока пуста</span>
             </a>
           </li>
         </ul>
         <ul class="page-header__additional-site-menu">
           <li class="page-header__additional-site-menu-item">
-            <a class="page-header__additional-site-menu-link" href="catalog.html">Новые поступления</a>
+            <a class="page-header__additional-site-menu-link" href="catalog.html" tabindex="6">Новые поступления</a>
           </li>
           <li class="page-header__additional-site-menu-item">
-            <a class="page-header__additional-site-menu-link" href="form.html">Распродажа</a>
+            <a class="page-header__additional-site-menu-link" href="form.html" tabindex="7">Распродажа</a>
           </li>
         </ul>
-        <a class="page-header__link-delivery" href="#">Бесплатная доставка по&nbsp;России</a>
+        <a class="page-header__link-delivery" href="#" tabindex="8">Бесплатная доставка по&nbsp;России</a>
       </nav>
     </header>
-    <main>
+    <main class="page__main">
       <section class="page__order order">
         <div class="order__title-wrapper">
           <h1 class="order__main-title">Вязание на&nbsp;заказ</h1>
@@ -233,5 +233,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

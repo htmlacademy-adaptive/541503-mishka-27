@@ -1,0 +1,409 @@
+@use "fonts.scss";
+@use "variables.scss" as var;
+
+@mixin font-main-text {
+  margin: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: var.$font-mobile-m;
+  line-height: var.$line-height-m;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+  }
+}
+
+@mixin font-alter-text {
+  margin: 0;
+
+  font-size: var.$font-mobile-m;
+  line-height: var.$line-height-s;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+    line-height: var.$line-height-m;
+  }
+}
+
+@mixin font-button {
+  margin: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-mobile-xl;
+  line-height: var.$line-height-xxs;
+  font-weight: var.$bold;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+    line-height: var.$line-height-xxs;
+  }
+}
+
+@mixin font-button-form {
+  margin: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxxxxs;
+  font-weight: var.$bold;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+    line-height: var.$line-height-xxxxxs;
+  }
+}
+
+@mixin font-button-catalog {
+  margin: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-mobile-xl;
+  line-height: var.$line-height-xxxxxs;
+  font-weight: var.$bold;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+    line-height: var.$line-height-xxxxxs;
+  }
+}
+
+@mixin font-button-modal {
+  margin: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxxxxs;
+  font-weight: var.$bold;
+  color: var.$color-basic-white;
+}
+
+@mixin font-site-menu {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-basic-black;
+}
+
+@mixin font-additional-site-menu {
+  margin: 0;
+
+  font-size: var.$font-desktop-s;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-basic-black;
+}
+
+@mixin font-link-delivery {
+  margin: 0;
+
+  font-size: var.$font-desktop-s;
+  line-height: var.$line-height-s;
+  color: var.$color-main-text;
+}
+
+@mixin font-week-product-label {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxs;
+  font-weight: var.$bold;
+  color: var.$color-basic-green;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+    line-height: var.$line-height-xxxxs;
+  }
+}
+
+@mixin font-week-product-description-list {
+  margin: 0;
+
+  font-size: var.$font-mobile-m;
+  line-height: var.$line-height-xxs;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-s;
+  }
+}
+
+@mixin week-product-price {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-xl;
+  }
+}
+
+@mixin font-reviews-name {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-tablet-xl;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    font-size: var.$font-desktop-m;
+  }
+}
+
+@mixin font-contacts {
+  margin: 0;
+
+  font-size: var.$font-mobile-s;
+  line-height: var.$line-height-m;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+    line-height: var.$line-height-m;
+  }
+}
+
+@mixin font-html-academy {
+  margin: 0;
+
+  font-size: var.$font-mobile-xxl;
+  line-height: var.$line-height-xxxs;
+  font-weight: var.$bold;
+  color: var.$color-basic-black;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-l;
+  }
+}
+
+@mixin font-modal-sizes {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxxxxs;
+  font-weight: var.$bold;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+  }
+}
+
+@mixin font-order-lead {
+  margin: 0;
+
+  font-size: var.$font-mobile-xs;
+  line-height: var.$line-height-s;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+    line-height: var.$line-height-m;
+  }
+}
+
+@mixin font-input {
+  margin: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxxs;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-l;
+    line-height: var.$line-height-xxxs;
+  }
+}
+
+@mixin font-placeholder {
+  margin: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxxs;
+  color: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-l;
+    line-height: var.$line-height-xxxs;
+  }
+}
+
+@mixin font-label {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxxs;
+  font-weight: var.$bold;
+  color: var.$color-basic-black;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-l;
+    line-height: var.$line-height-xxxs;
+  }
+}
+
+@mixin font-form-footnote {
+  margin: 0;
+
+  font-size: var.$font-mobile-s;
+  line-height: var.$line-height-xxxxxs;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+    line-height: var.$line-height-m;
+  }
+}
+
+@mixin font-catalog-text {
+  margin: 0;
+
+  font-size: var.$font-mobile-xs;
+  line-height: var.$line-height-m;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-s;
+  }
+}
+
+@mixin font-catalog-price {
+  margin: 0;
+
+  font-size: var.$font-mobile-m;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-basic-black;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+  }
+}
+
+@mixin font-video-text {
+  margin: 0;
+
+  font-size: var.$font-mobile-xs;
+  line-height: var.$line-height-s;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-s;
+    line-height: var.$line-height-m;
+  }
+}
+
+@mixin font-subtitle {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxs;
+  font-weight: var.$bold;
+  color: var.$color-basic-black;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-xl;
+    line-height: var.$line-height-xs;
+  }
+}
+
+@mixin font-promo-link-title {
+  margin: 0;
+
+  font-size: var.$font-mobile-xxl;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-basic-white;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-xl;
+    line-height: var.$line-height-m;
+  }
+}
+
+@mixin font-legend {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-xxxxxs;
+  font-weight: var.$bold;
+  color: var.$color-basic-green;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+  }
+}
+
+@mixin font-subtitle-catalog {
+  margin: 0;
+
+  font-size: var.$font-mobile-l;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-basic-black;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-xl;
+  }
+}
+
+@mixin font-section-title {
+  margin: 0;
+
+  font-size: var.$font-mobile-xxxl;
+  line-height: var.$line-height-m;
+  font-weight: var.$bold;
+  color: var.$color-basic-black;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-tablet-xxxl;
+    line-height: var.$line-height-l;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    font-size: var.$font-desktop-xxxl;
+    line-height: var.$line-height-xl;
+  }
+}
+
+@mixin font-main-title {
+  margin: 0;
+
+  font-size: var.$font-mobile-xxxxl;
+  line-height: var.$line-height-m;
+  font-weight: var.$bold;
+  text-align: center;
+  color: var.$color-basic-black;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-tablet-xxxl;
+    line-height: var.$line-height-l;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    font-size: var.$font-desktop-xxxl;
+    line-height: var.$line-height-xl;
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

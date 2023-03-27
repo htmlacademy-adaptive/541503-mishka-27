@@ -1,1 +1,12 @@
 // Начните писать стили здесь
+@use "global/fonts.scss";
+@use "global/variables.scss" as var;
+@use "global/mixins.scss" as mixin;
+@use "global/global-selectors.scss";
+@use "helpers/visually-hidden.scss";
+@use "helpers/container.scss";
+@use "blocks/page.scss";
+@use "blocks/page-header.scss";
+@use "blocks/promo.scss";
+
+@use "blocks/contacts.scss";

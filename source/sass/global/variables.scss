@@ -1,0 +1,56 @@
+@use "fonts.scss";
+
+$main-font: "Open Sans", "Arial", sans-serif;
+
+$font-mobile-xs: 13px;
+$font-mobile-s: 14px;
+$font-desktop-s: 15px;
+$font-mobile-m: 15px;
+$font-desktop-m: 17px;
+$font-mobile-l: 17px;
+$font-desktop-l: 19px;
+$font-mobile-xl: 18px;
+$font-tablet-xl: 18px;
+$font-desktop-xl: 20px;
+$font-mobile-xxl: 19px;
+$font-mobile-xxxl: 25px;
+$font-desktop-xxl: 30px;
+$font-mobile-xxxxl: 27px;
+$font-tablet-xxxl: 43px;
+$font-desktop-xxxl: 53px;
+
+$line-height-xxxxxs: 16px;
+$line-height-xxxxs: 17px;
+$line-height-xxxs: 18px;
+$line-height-xxs: 20px;
+$line-height-xs: 22px;
+$line-height-s: 24px;
+$line-height-m: 30px;
+$line-height-l: 50px;
+$line-height-xl: 57px;
+
+$normal: 400;
+$bold: 700;
+
+$color-basic-white: #ffffff;
+$color-basic-black: #000000;
+$color-alter-black: #231f20;
+$color-basic-green: #63d1bb;
+$color-alter-green: #56c3b2;
+$color-basic-green-hover: #59d5bc;
+$color-alter-green-hover: #46c1ae;
+$color-main-text: #444444;
+$color-border: #ececec;
+$color-header-alter-background: #f9f9f9;
+$color-status-error: #ff0000;
+
+$shadow-main-menu-top: inset 0 1px 0 0 #ececec;
+$shadow-main-menu-bottom: inset 0 -1px 0 0 #ececec;
+$shadow-card-hover: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+$shadow-card-active: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$tablet-width-only: 1149px;
+$desktop-width: 1150px;
+$double-density: 2dppx;

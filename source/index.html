@@ -20,13 +20,13 @@
   </head>
   <body class="page__body">
     <header class="page__header page-header" id="header">
-      <nav class="page-header__main-nav page-header__main-nav--opened container">
+      <nav class="page-header__main-nav page-header__main-nav--opened">
         <div class="page-header__logo-wrapper">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" tabindex="3">
             <picture>
               <source media=" (min-width: 1440px) " srcset="img/mishka-logo-desktop.svg 1x, img/mishka-logo-desktop.svg 2x">
               <source media=" (min-width: 768px) " srcset="img/mishka-logo-tablet.svg 1x, img/mishka-logo-tablet.svg 2x">
-              <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Главный логотип Мишка маленький.">
+              <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" srcset="img/mishka-logo-mobile.svg 2x" width="86" height="35" alt="Главный логотип Мишка маленький.">
             </picture>
           </a>
           <button class="page-header__toggle">
@@ -36,43 +36,43 @@
         </div>
         <ul class="page-header__main-site-menu">
           <li class="page-header__main-site-menu-item">
-            <a class="page-header__main-site-menu-link" href="catalog.html">Каталог товаров</a>
+            <a class="page-header__main-site-menu-link" href="catalog.html" tabindex="1">Каталог товаров</a>
           </li>
           <li class="page-header__main-site-menu-item">
-            <a class="page-header__main-site-menu-link" href="form.html">Вязание на&nbsp;заказ</a>
+            <a class="page-header__main-site-menu-link" href="form.html" tabindex="2">Вязание на&nbsp;заказ</a>
           </li>
         </ul>
         <ul class="page-header__user-menu">
           <li class="page-header__user-menu-item">
-            <a class="page-header__user-menu-link page-header__user-menu-link" href="catalog.html">
+            <a class="page-header__user-menu-link" href="#" tabindex="4">
               <svg class="page-header__user-menu-link-image page-header__user-menu-link-image--search" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" role="img" aria-label="Иконка поиска (увеличительное стекло)." fill="none">
                 <use xlink:href="img/sprite.svg#search-icon"></use>
               </svg>
-              <span class="page-header__user-menu-link-inscription">Поиск по&nbsp;сайту</span>
+              <span class="page-header__user-menu-link-inscription page-header__user-menu-link-inscription--hidden">Поиск по&nbsp;сайту</span>
             </a>
           </li>
           <li class="page-header__user-menu-item">
-            <a class="page-header__user-menu-link" href="form.html">
+            <a class="page-header__user-menu-link page-header__user-menu-link--full-text" href="#" tabindex="5">
               <svg class="page-header__user-menu-link-image page-header__user-menu-link-image--cart" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" role="img" aria-label="Иконка корзины." fill="none">
                 <use xlink:href="img/sprite.svg#cart-icon"></use>
               </svg>
               <span class="page-header__user-menu-link-inscription">Корзина:</span>
-              <span class="page-header__user-menu-link-quantity">пока пуста</span>
+              <span class="page-header__user-menu-link-quantity"> пока пуста</span>
             </a>
           </li>
         </ul>
         <ul class="page-header__additional-site-menu">
           <li class="page-header__additional-site-menu-item">
-            <a class="page-header__additional-site-menu-link" href="catalog.html">Новые поступления</a>
+            <a class="page-header__additional-site-menu-link" href="catalog.html" tabindex="6">Новые поступления</a>
           </li>
           <li class="page-header__additional-site-menu-item">
-            <a class="page-header__additional-site-menu-link" href="form.html">Распродажа</a>
+            <a class="page-header__additional-site-menu-link" href="form.html" tabindex="7">Распродажа</a>
           </li>
         </ul>
-        <a class="page-header__link-delivery" href="#">Бесплатная доставка по&nbsp;России</a>
+        <a class="page-header__link-delivery" href="#" tabindex="8">Бесплатная доставка по&nbsp;России</a>
       </nav>
     </header>
-    <main>
+    <main class="page__main">
       <section class="page__promo promo">
         <picture>
           <source type="image/webp" media=" (min-width: 1440px) " srcset="img/promo-bg-desktop.webp 1x, img/promo-bg-desktop@2x.webp 2x">
@@ -82,22 +82,30 @@
           <source media=" (min-width: 768px) " srcset="img/promo-bg-tablet.jpg 1x, img/promo-bg-tablet@2x.jpg 2x">
           <img class="promo__image" src="img/promo-bg-mobile.jpg" srcset="img/promo-bg-mobile@2x.jpg 2x" width="280" height="270" alt="Белый детский игрушечный домик с милыми штучками ручной работы в каждой комнате.">
         </picture>
-        <div class="promo__wrapper container">
-          <h1 class="promo__main-title">Милые штуки ручной<br>работы для&nbsp;дома</h1>
-          <h2 class="visually-hidden">Промо-блок</h2>
-          <ul class="promo__items-list">
-            <li class="promo__items-list-item promo__items-list-item--interior-items">
-              <a class="promo__items-list-link" href="#">
-                <h3 class="promo__items-list-title">Предметы интерьера</h3>
-              </a>
-            </li>
-            <li class="promo__items-list-item promo__items-list-item--kids-toys">
-              <a class="promo__items-list-link" href="#">
-                <h3 class="promo__items-list-title">Детские игрушки</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h1 class="promo__main-title">Милые штуки ручной<br>работы для&nbsp;дома</h1>
+        <h2 class="visually-hidden">Промо-блок</h2>
+        <ul class="promo__items-list">
+          <li class="promo__items-list-item">
+            <a class="promo__items-list-link" href="#">
+              <h3 class="promo__items-list-link-title">Предметы интерьера</h3>
+              <picture>
+                <source media=" (min-width: 1440px) " srcset="img/lamp-icon-desktop.svg 1x, img/lamp-icon-desktop.svg 2x">
+                <source media=" (min-width: 768px) " srcset="img/lamp-icon-desktop.svg 1x, img/lamp-icon-desktop.svg 2x">
+                <img class="promo__items-list-link-image promo__items-list-link-image--interior-items" src="img/lamp-icon-mobile.svg" srcset="img/lamp-icon-mobile.svg 2x" width="40" height="62" alt="Главный логотип Мишка маленький.">
+              </picture>
+            </a>
+          </li>
+          <li class="promo__items-list-item">
+            <a class="promo__items-list-link" href="#">
+              <h3 class="promo__items-list-link-title">Детские игрушки</h3>
+              <picture>
+                <source media=" (min-width: 1440px) " srcset="img/lego-icon-desktop.svg 1x, img/lego-icon-desktop.svg 2x">
+                <source media=" (min-width: 768px) " srcset="img/lego-icon-tablet.svg 1x, img/lego-icon-tablet.svg 2x">
+                <img class="promo__items-list-link-image promo__items-list-link-image--kids-toys" src="img/lego-icon-mobile.svg" srcset="img/lego-icon-mobile.svg 2x" width="60" height="60" alt="Главный логотип Мишка маленький.">
+              </picture>
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="page__week-product week-product">
         <div class="week-product__wrapper container">
@@ -287,7 +295,7 @@
         </a>
       </div>
     </footer>
-    <div class="page__modal-container modal-container">
+    <div class="page__modal-container modal-container" style="width: 320px;">
       <div class="modal-container__modal">
         <h2 class="modal-container__section-title">Добавить в&nbsp;корзину</h2>
         <form class="modal-container__form modal-container-form" action="https://echo.htmlacademy.ru" method="post">
@@ -295,15 +303,15 @@
             <legend class="modal-container-group__title">Выберите размер:</legend>
             <div class="modal-container-group__checkboxes-wrapper">
               <div class="modal-container-group__box">
-                <input class="visually-hidden" id="modal-size-s" name="size-s" type="checkbox" checked>
+                <input class="visually-hidden" id="modal-size-s" name="size" value="size-s" type="radio" checked>
                 <label class="modal-container-group__label" for="modal-size-s">S</label>
               </div>
               <div class="modal-container-group__box">
-                <input class="visually-hidden" id="modal-size-m" name="size-m" type="checkbox">
+                <input class="visually-hidden" id="modal-size-m" name="size" value="size-m" type="radio">
                 <label class="modal-container-group__label" for="modal-size-m">M</label>
               </div>
               <div class="modal-container-group__box">
-                <input class="visually-hidden" id="modal-size-l" name="size-l" type="checkbox">
+                <input class="visually-hidden" id="modal-size-l" name="size" value="size-l" type="radio">
                 <label class="modal-container-group__label" for="modal-size-l">L</label>
               </div>
             </div>
@@ -312,5 +320,20 @@
         </form>
       </div>
     </div>
+    <div style="
+      position: absolute;
+      top: 0;
+      z-index: 100;
+      width: 320px;
+      height: 3623px;
+      margin: 0 auto;
+      background-image: url('img/pixel-perfect/index-mobile.png');
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: invert(1);
+    "></div> -->
+    <script src="js/script.js"></script>
   </body>
 </html>

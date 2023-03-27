@@ -1,0 +1,8 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.contacts__map {
+  display: block;
+  margin: 0 -30px;
+}
