@@ -34,6 +34,8 @@
   font-size: var.$font-mobile-xl;
   line-height: var.$line-height-xxs;
   font-weight: var.$bold;
+  text-align: center;
+  text-transform: uppercase;
   color: var.$color-main-text;
 
   @media (min-width: var.$tablet-width) {
@@ -49,6 +51,8 @@
   font-size: var.$font-mobile-l;
   line-height: var.$line-height-xxxxxs;
   font-weight: var.$bold;
+  text-align: center;
+  text-transform: uppercase;
   color: var.$color-main-text;
 
   @media (min-width: var.$tablet-width) {
@@ -64,6 +68,8 @@
   font-size: var.$font-mobile-xl;
   line-height: var.$line-height-xxxxxs;
   font-weight: var.$bold;
+  text-align: center;
+  text-transform: uppercase;
   color: var.$color-main-text;
 
   @media (min-width: var.$tablet-width) {
@@ -79,6 +85,8 @@
   font-size: var.$font-mobile-l;
   line-height: var.$line-height-xxxxxs;
   font-weight: var.$bold;
+  text-align: center;
+  text-transform: uppercase;
   color: var.$color-basic-white;
 }
 
@@ -114,11 +122,13 @@
   font-size: var.$font-mobile-l;
   line-height: var.$line-height-xxs;
   font-weight: var.$bold;
+  text-transform: uppercase;
   color: var.$color-basic-green;
 
   @media (min-width: var.$tablet-width) {
     font-size: var.$font-desktop-m;
     line-height: var.$line-height-xxxxs;
+    text-align: center;
   }
 }
 
@@ -140,6 +150,7 @@
   font-size: var.$font-mobile-l;
   line-height: var.$line-height-s;
   font-weight: var.$bold;
+  text-align: center;
   color: var.$color-main-text;
 
   @media (min-width: var.$tablet-width) {
@@ -147,13 +158,14 @@
   }
 }
 
-@mixin font-reviews-name {
+@mixin font-reviews-source-name {
   margin: 0;
 
   font-size: var.$font-mobile-l;
   line-height: var.$line-height-s;
   font-weight: var.$bold;
-  color: var.$color-main-text;
+  font-style: normal;
+  color: var.$color-basic-black;
 
   @media (min-width: var.$tablet-width) {
     font-size: var.$font-tablet-xl;
@@ -164,11 +176,19 @@
   }
 }
 
+@mixin font-reviews-source-link {
+  font-size: var.$font-desktop-m;
+  line-height: var.$line-height-s;
+  font-style: normal;
+  color: var.$color-main-text;
+}
+
 @mixin font-contacts {
   margin: 0;
 
   font-size: var.$font-mobile-s;
   line-height: var.$line-height-m;
+  font-style: normal;
   color: var.$color-main-text;
 
   @media (min-width: var.$tablet-width) {

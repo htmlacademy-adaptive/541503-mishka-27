@@ -1,0 +1,49 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.button {
+  display: block;
+  padding: 14px 20px;
+
+  @include mixin.font-button;
+
+  background-color: transparent;
+  border: 2px solid var.$color-main-text;
+
+  &:hover,
+  &:focus {
+    color: var.$color-basic-white;
+
+    background-color: var.$color-main-text;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  /*Чтобы сделать соответствующую кнопку неактивной элементу с классом "button" добавить модификатор "is-disabled"*/
+  &--is-disabled {
+    opacity: 0.6;
+  }
+
+  &--is-disabled:hover,
+  &--is-disabled:focus,
+  &--is-disabled:active {
+    color: var.$color-main-text;
+
+    background-color: transparent;
+  }
+}
+
+.button--size-s {
+  @media (min-width: var.$tablet-width) {
+    width: 175px;
+  }
+}
+
+.button--size-m {
+  @media (min-width: var.$tablet-width) {
+    width: 230px;
+  }
+}

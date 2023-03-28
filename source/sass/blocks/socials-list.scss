@@ -1,0 +1,35 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.socials-list {
+  @include mixin.list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+
+  @media (min-width: var.$tablet-width) {
+    max-width: 320px;
+  }
+}
+
+.socials-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var.$color-alter-black;
+
+  &:hover,
+  &:focus {
+    color: var.$color-alter-green-hover;
+  }
+
+  &:active {
+    color: var.$color-alter-green-hover;
+    opacity: 0.3;
+  }
+}
