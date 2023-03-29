@@ -299,28 +299,28 @@
         </a>
       </div>
     </footer>
-    <div class="page__modal-container modal-container" style="width: 320px;">
+    <div class="page__modal-container modal-container">
       <div class="modal-container__modal">
         <h2 class="modal-container__section-title">Добавить в&nbsp;корзину</h2>
         <form class="modal-container__form modal-container-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="modal-container-form__group modal-container-group">
             <legend class="modal-container-group__title">Выберите размер:</legend>
-            <div class="modal-container-group__checkboxes-wrapper">
+            <div class="modal-container-group__radiobuttons-wrapper">
               <div class="modal-container-group__box">
-                <input class="visually-hidden" id="modal-size-s" name="size" value="size-s" type="radio" checked>
+                <input class="modal-container-group__radiobutton visually-hidden" id="modal-size-s" name="size" value="size-s" type="radio" checked>
                 <label class="modal-container-group__label" for="modal-size-s">S</label>
               </div>
               <div class="modal-container-group__box">
-                <input class="visually-hidden" id="modal-size-m" name="size" value="size-m" type="radio">
+                <input class="modal-container-group__radiobutton visually-hidden" id="modal-size-m" name="size" value="size-m" type="radio">
                 <label class="modal-container-group__label" for="modal-size-m">M</label>
               </div>
               <div class="modal-container-group__box">
-                <input class="visually-hidden" id="modal-size-l" name="size" value="size-l" type="radio">
+                <input class="modal-container-group__radiobutton visually-hidden" id="modal-size-l" name="size" value="size-l" type="radio">
                 <label class="modal-container-group__label" for="modal-size-l">L</label>
               </div>
             </div>
           </fieldset>
-          <button class="button button--modal" type="submit">Добавить</button>
+          <button class="modal-container__button button button--modal" type="submit">Добавить</button>
         </form>
       </div>
     </div>
@@ -328,10 +328,10 @@
       position: absolute;
       top: 0;
       z-index: 100;
-      width: 320px;
-      height: 1607px;
+      width: 1150px;
+      height: 3623px;
       margin: 0 auto;
-      background-image: url('img/pixel-perfect/mobile-modal.png');
+      background-image: url('img/pixel-perfect/index-desktop.png');
       background-repeat: no-repeat;
       opacity: 0.5;
       left: 50%;

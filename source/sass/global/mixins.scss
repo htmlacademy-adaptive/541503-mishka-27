@@ -210,6 +210,35 @@
   }
 }
 
+@mixin font-modal-title {
+  margin: 0;
+
+  font-size: var.$font-mobile-xxxl;
+  line-height: var.$line-height-m;
+  font-weight: var.$bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: var.$color-basic-black;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-xxl;
+    line-height: var.$line-height-xl;
+  }
+}
+
+@mixin font-modal-legend {
+  padding: 0;
+
+  font-size: var.$font-mobile-m;
+  line-height: var.$line-height-m;
+  text-align: center;
+  color: var.$color-main-text;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-desktop-m;
+  }
+}
+
 @mixin font-modal-sizes {
   margin: 0;
 

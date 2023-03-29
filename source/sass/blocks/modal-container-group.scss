@@ -1,0 +1,59 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.modal-container-group {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 15px;
+  }
+}
+
+.modal-container-group__title {
+  @include mixin.font-modal-legend;
+
+  margin: 0 0 22px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 19px;
+  }
+}
+
+.modal-container-group__radiobuttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 31px;
+}
+
+.modal-container-group__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 51px;
+
+  @include mixin.font-modal-sizes;
+
+  border: 1px solid rgba(68, 68, 68, 0.1);
+
+  @media (min-width: var.$tablet-width) {
+    width: 112px;
+  }
+
+  &:hover {
+    border: 1px solid rgba(68, 68, 68, 0.3);
+  }
+}
+
+.modal-container-group__radiobutton:focus + .modal-container-group__label {
+  border: 1px solid rgba(68, 68, 68, 0.3);
+}
+
+.modal-container-group__radiobutton:checked + .modal-container-group__label {
+  border: 1px solid var.$color-modal-checkbox-checked;
+}
