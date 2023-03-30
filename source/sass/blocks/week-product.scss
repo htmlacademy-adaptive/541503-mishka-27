@@ -1,0 +1,235 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.week-product {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 31px 0 42px;
+  max-width: 1150px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 40px 0 69px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 42px 0 0;
+  }
+}
+
+.week-product::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 6px;
+
+  background-image: url("../img/zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-size: 100% 6px;
+  background-position: center bottom;
+
+  @media (min-width: var.$tablet-width) and (max-width: var.$tablet-width-only) {
+    height: 17px;
+
+    background-image: url("../img/zigzag-line-tablet.svg");
+    background-size: 100% 17px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    display: none;
+  }
+}
+
+.week-product__wrapper {
+  @media (min-width: var.$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 334px;
+    column-gap: 42px;
+    align-items: start;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    position: relative;
+
+    grid-template-columns: 117px 292px 525px;
+    column-gap: 58px;
+    padding: 0 0 96px;
+  }
+}
+
+.week-product__wrapper::after {
+  @media (min-width: var.$desktop-width) {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 23px;
+
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-size: 100% 23px;
+    background-position: center bottom;
+  }
+}
+
+.week-product__header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 17px;
+
+  @media (min-width: var.$tablet-width) {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 38px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 117px 292px 525px;
+    column-gap: 58px;
+    margin: 0 0 36px;
+    padding: 73px 0 0;
+  }
+}
+
+.week-product__section-title {
+  @media (max-width: var.$mobile-width-only) {
+    margin: 0 0 4px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    position: relative;
+    z-index: 1;
+
+    grid-column: 2 / -1;
+  }
+
+  @include mixin.font-section-title;
+}
+
+.week-product__label {
+  @include mixin.font-week-product-label;
+
+  @media (min-width: var.$tablet-width) {
+    flex-shrink: 0;
+    margin: 6px 14px 0 60px;
+    max-width: 100px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 8px 0 0 45px;
+  }
+}
+
+.week-product__text-content {
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 28px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    grid-column: 2 / 3;
+    margin: 0 0 80px;
+  }
+}
+
+.week-product__text {
+  @include mixin.font-alter-text;
+
+  margin: 0 0 21px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 40px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 0 0 54px;
+  }
+}
+
+.week-product__list-description {
+  @include mixin.list-reset;
+  @include mixin.font-week-product-description-list;
+
+  margin: 0 0 28px;
+}
+
+.week-product__list-description-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px 0 13px;
+
+  border-bottom: 1px solid var.$color-border;
+}
+
+.week-product__list-description-term {
+  width: 77px;
+}
+
+.week-product__list-description-definition {
+  margin: 0 0 0 20px;
+}
+
+.week-product__image {
+  width: 260px;
+  margin: 0 auto 25px;
+
+  @media (min-width: var.$tablet-width) {
+    grid-row: 2 / 4;
+    margin: 12px auto 0;
+    width: 334px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    width: 525px;
+  }
+}
+
+.week-product__picture {
+  @media (min-width: var.$tablet-width) {
+    grid-row: 2 / 4;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    grid-column: 3 / -1;
+    grid-row: 1 / 4;
+  }
+}
+
+.week-product__footer {
+  @media (min-width: var.$tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.week-product__price {
+  @include mixin.week-product-price;
+
+  display: block;
+  margin: 0 0 25px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 33px;
+  }
+}

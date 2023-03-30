@@ -1,0 +1,90 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.page-footer {
+  padding: 27px 0 23px;
+
+  background-color: var.$color-footer-background;
+
+  @media (max-width: var.$mobile-width-only) {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 62px;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    padding: 41px 0 48px;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: var.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  color: var.$color-basic-black;
+
+  @media (max-width: var.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    margin: 10px 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: var.$color-alter-green-hover;
+  }
+
+  &:active {
+    color: var.$color-alter-green-hover;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__socials-list-wrapper {
+  @media (max-width: var.$mobile-width-only) {
+    padding: 0 0 30px;
+    border-bottom: 1px solid var.$color-footer-border;
+  }
+}
+
+.page-footer__html-academy-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 21px 0 0;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 1px 0 0;
+    max-width: 200px;
+  }
+}
+
+.page-footer__html-academy-link-inscription {
+  @include mixin.font-html-academy;
+  margin: 0 27px 0 0;
+}
+
+.page-footer__html-academy-link-icon {
+  color: var.$color-basic-green;
+}
+
+.page-footer__html-academy-link:hover .page-footer__html-academy-link-icon,
+.page-footer__html-academy-link:focus .page-footer__html-academy-link-icon {
+  color: var.$color-alter-green-hover;
+}
+
+.page-footer__html-academy-link:active .page-footer__html-academy-link-icon {
+  color: var.$color-alter-green-hover;
+  opacity: 0.3;
+}
