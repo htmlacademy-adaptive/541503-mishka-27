@@ -73,7 +73,7 @@
       </nav>
     </header>
     <main class="page__main">
-      <section class="page__catalog catalog">
+      <section class="catalog">
         <div class="catalog__title-wrapper container">
           <h1 class="catalog__main-title">Каталог товаров</h1>
           <h2 class="visually-hidden">Основной контент каталога</h2>
@@ -159,7 +159,7 @@
           </li>
         </ul>
       </section>
-      <section class="page__video video">
+      <section class="video">
         <div class="video__wrapper container">
           <h2 class="video__title">Процесс производства</h2>
           <div class="video__video-content">
@@ -184,7 +184,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="index.html#header">
           <svg class="page-footer__logo-image" xmlns="http://www.w3.org/2000/svg" width="102" height="35" viewBox="0 0 102 35" role="img" aria-label="Логотип-надпись Мишка." fill="none">
@@ -229,7 +229,7 @@
         </a>
       </div>
     </footer>
-    <div class="page__modal-container modal-container modal-container--shown" style="width: 320px;">
+    <div class="modal-container">
       <div class="modal-container__modal">
         <h2 class="modal-container__section-title">Добавить в&nbsp;корзину</h2>
         <form class="modal-container__form modal-container-form" action="https://echo.htmlacademy.ru" method="post">
@@ -250,7 +250,7 @@
               </div>
             </div>
           </fieldset>
-          <button class="button button--modal" type="submit">Добавить</button>
+          <button class="modal-container__button button button--modal" type="submit">Добавить</button>
         </form>
       </div>
     </div>

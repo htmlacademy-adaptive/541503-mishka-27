@@ -144,7 +144,7 @@
   }
 }
 
-.reviews__slides-item-sourse-name {
+.reviews__slides-item-source-name {
   display: block;
 
   @include mixin.font-reviews-source-name;
@@ -156,8 +156,9 @@
   }
 }
 
-.reviews__slides-item-sourse-link {
+.reviews__slides-item-source-link {
   display: block;
+  max-width: 160px;
 
   @include mixin.font-reviews-source-link;
 

@@ -19,7 +19,7 @@
     <title>HTML Academy: Мишка - главная страница</title>
   </head>
   <body class="page__body">
-    <header class="page__header page-header" id="header">
+    <header class="page__header page-header page-header--alter-background" id="header">
       <nav class="page-header__main-nav page-header__main-nav--opened">
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html" tabindex="3">
@@ -73,41 +73,43 @@
       </nav>
     </header>
     <main class="page__main">
-      <section class="page__promo promo">
-        <picture>
-          <source type="image/webp" media=" (min-width: 1150px) " srcset="img/promo-bg-desktop.webp 1x, img/promo-bg-desktop@2x.webp 2x">
-          <source type="image/webp" media=" (min-width: 768px) " srcset="img/promo-bg-tablet.webp 1x, img/promo-bg-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/promo-bg-mobile.webp 1x, img/promo-bg-mobile@2x.webp 2x">
-          <source media=" (min-width: 1440px) " srcset="img/promo-bg-desktop.jpg 1x, img/promo-bg-desktop@2x.jpg 2x">
-          <source media=" (min-width: 768px) " srcset="img/promo-bg-tablet.jpg 1x, img/promo-bg-tablet@2x.jpg 2x">
-          <img class="promo__image" src="img/promo-bg-mobile.jpg" srcset="img/promo-bg-mobile@2x.jpg 2x" width="280" height="270" alt="Белый детский игрушечный домик с милыми штучками ручной работы в каждой комнате.">
-        </picture>
-        <h1 class="promo__main-title">Милые штуки ручной<br>работы для&nbsp;дома</h1>
-        <h2 class="visually-hidden">Промо-блок</h2>
-        <ul class="promo__items-list">
-          <li class="promo__items-list-item">
-            <a class="promo__items-list-link" href="#">
-              <h3 class="promo__items-list-link-title">Предметы интерьера</h3>
-              <picture>
-                <source media=" (min-width: 1150px) " srcset="img/lamp-icon-desktop.svg 1x, img/lamp-icon-desktop.svg 2x">
-                <source media=" (min-width: 768px) " srcset="img/lamp-icon-desktop.svg 1x, img/lamp-icon-desktop.svg 2x">
-                <img class="promo__items-list-link-image promo__items-list-link-image--interior-items" src="img/lamp-icon-mobile.svg" srcset="img/lamp-icon-mobile.svg 2x" width="40" height="62" alt="Главный логотип Мишка маленький.">
-              </picture>
-            </a>
-          </li>
-          <li class="promo__items-list-item">
-            <a class="promo__items-list-link" href="#">
-              <h3 class="promo__items-list-link-title">Детские игрушки</h3>
-              <picture>
-                <source media=" (min-width: 1150px) " srcset="img/lego-icon-desktop.svg 1x, img/lego-icon-desktop.svg 2x">
-                <source media=" (min-width: 768px) " srcset="img/lego-icon-tablet.svg 1x, img/lego-icon-tablet.svg 2x">
-                <img class="promo__items-list-link-image promo__items-list-link-image--kids-toys" src="img/lego-icon-mobile.svg" srcset="img/lego-icon-mobile.svg 2x" width="60" height="60" alt="Главный логотип Мишка маленький.">
-              </picture>
-            </a>
-          </li>
-        </ul>
+      <section class="promo">
+        <div class="promo__wrapper container">
+          <picture>
+            <source type="image/webp" media=" (min-width: 1150px) " srcset="img/promo-bg-desktop.webp 1x, img/promo-bg-desktop@2x.webp 2x">
+            <source type="image/webp" media=" (min-width: 768px) " srcset="img/promo-bg-tablet.webp 1x, img/promo-bg-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/promo-bg-mobile.webp 1x, img/promo-bg-mobile@2x.webp 2x">
+            <source media=" (min-width: 1440px) " srcset="img/promo-bg-desktop.jpg 1x, img/promo-bg-desktop@2x.jpg 2x">
+            <source media=" (min-width: 768px) " srcset="img/promo-bg-tablet.jpg 1x, img/promo-bg-tablet@2x.jpg 2x">
+            <img class="promo__image" src="img/promo-bg-mobile.jpg" srcset="img/promo-bg-mobile@2x.jpg 2x" width="280" height="270" alt="Белый детский игрушечный домик с милыми штучками ручной работы в каждой комнате.">
+          </picture>
+          <h1 class="promo__main-title">Милые штуки ручной<br>работы для&nbsp;дома</h1>
+          <h2 class="visually-hidden">Промо-блок</h2>
+          <ul class="promo__items-list">
+            <li class="promo__items-list-item">
+              <a class="promo__items-list-link" href="#">
+                <h3 class="promo__items-list-link-title">Предметы интерьера</h3>
+                <picture>
+                  <source media=" (min-width: 1150px) " srcset="img/lamp-icon-desktop.svg 1x, img/lamp-icon-desktop.svg 2x">
+                  <source media=" (min-width: 768px) " srcset="img/lamp-icon-desktop.svg 1x, img/lamp-icon-desktop.svg 2x">
+                  <img class="promo__items-list-link-image promo__items-list-link-image--interior-items" src="img/lamp-icon-mobile.svg" srcset="img/lamp-icon-mobile.svg 2x" width="40" height="62" alt="Главный логотип Мишка маленький.">
+                </picture>
+              </a>
+            </li>
+            <li class="promo__items-list-item">
+              <a class="promo__items-list-link" href="#">
+                <h3 class="promo__items-list-link-title">Детские игрушки</h3>
+                <picture>
+                  <source media=" (min-width: 1150px) " srcset="img/lego-icon-desktop.svg 1x, img/lego-icon-desktop.svg 2x">
+                  <source media=" (min-width: 768px) " srcset="img/lego-icon-tablet.svg 1x, img/lego-icon-tablet.svg 2x">
+                  <img class="promo__items-list-link-image promo__items-list-link-image--kids-toys" src="img/lego-icon-mobile.svg" srcset="img/lego-icon-mobile.svg 2x" width="60" height="60" alt="Главный логотип Мишка маленький.">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="page__week-product week-product">
+      <section class="week-product">
         <div class="container">
           <div class="week-product__wrapper">
             <div class="week-product__header">
@@ -146,7 +148,7 @@
           </div>
         </div>
       </section>
-      <section class="page__advantages advantages">
+      <section class="advantages">
         <div class="advantages__wrapper container">
           <h2 class="advantages__section-title">Коротко о нас:</h2>
           <ul class="advantages__list">
@@ -171,34 +173,34 @@
           </ul>
         </div>
       </section>
-      <section class="page__reviews reviews">
+      <section class="reviews">
         <div class="reviews__wrapper container">
           <h2 class="reviews__section-title">Отзывы</h2>
           <ul class="reviews__slides-list">
             <li class="reviews__slides-item reviews__slides-item--active">
               <blockquote class="reviews__slides-item-content">
                 <p class="reviews__slides-item-main-text-content">Я&nbsp;молодая мама, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
-                <cite class="reviews__slides-item-sourse">
-                  <span class="reviews__slides-item-sourse-name">Анастасия Красильникова</span>
-                  <a class="reviews__slides-item-sourse-link" href="#">@misssssiskras</a>
+                <cite class="reviews__slides-item-source">
+                  <span class="reviews__slides-item-source-name">Анастасия Красильникова</span>
+                  <a class="reviews__slides-item-source-link" href="#">@misssssiskras</a>
                 </cite>
               </blockquote>
             </li>
             <li class="reviews__slides-item">
               <blockquote class="reviews__slides-item-content">
                 <p class="reviews__slides-item-main-text-content">Я&nbsp;сестра молодой мамы, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
-                <cite class="reviews__slides-item-sourse">
-                  <span class="reviews__slides-item-sourse-name">Екатерина Красильникова</span>
-                  <a class="reviews__slides-item-sourse-link" href="#">@misssssiskras2</a>
+                <cite class="reviews__slides-item-source">
+                  <span class="reviews__slides-item-source-name">Екатерина Красильникова</span>
+                  <a class="reviews__slides-item-source-link" href="#">@misssssiskras2</a>
                 </cite>
               </blockquote>
             </li>
             <li class="reviews__slides-item">
               <blockquote class="reviews__slides-item-content">
                 <p class="reviews__slides-item-main-text-content">Я&nbsp;двоюродная сестра молодой мамы, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
-                <cite class="reviews__slides-item-sourse">
-                  <span class="reviews__slides-item-sourse-name">Елена Красильникова</span>
-                  <a class="reviews__slides-item-sourse-link" href="#">@misssssiskras3</a>
+                <cite class="reviews__slides-item-source">
+                  <span class="reviews__slides-item-source-name">Елена Красильникова</span>
+                  <a class="reviews__slides-item-source-link" href="#">@misssssiskras3</a>
                 </cite>
               </blockquote>
             </li>
@@ -220,7 +222,7 @@
           <a class="reviews__button button button--size-s" href="#">Написать</a>
         </div>
       </section>
-      <section class="page__contacts contacts">
+      <section class="contacts">
         <div class="contacts__wrapper container">
           <div class="contacts__main-content">
             <h2 class="contacts__section-title">Контакты</h2>
@@ -254,7 +256,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="index.html#header">
           <svg class="page-footer__logo-image" xmlns="http://www.w3.org/2000/svg" width="102" height="35" viewBox="0 0 102 35" role="img" aria-label="Логотип-надпись Мишка." fill="none">
@@ -299,7 +301,7 @@
         </a>
       </div>
     </footer>
-    <div class="page__modal-container modal-container">
+    <div class="modal-container">
       <div class="modal-container__modal">
         <h2 class="modal-container__section-title">Добавить в&nbsp;корзину</h2>
         <form class="modal-container__form modal-container-form" action="https://echo.htmlacademy.ru" method="post">
