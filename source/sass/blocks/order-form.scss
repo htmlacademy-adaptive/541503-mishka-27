@@ -1,0 +1,39 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.order-form__footer {
+  @media (min-width: var.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 0 225px;
+  }
+}
+
+.order-form__footnote {
+  @media (max-width: var.$mobile-width-only) {
+    margin: 0 0 29px;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    margin: -4px 0 0;
+  }
+
+  @include mixin.font-form-footnote;
+}
+
+.order-form__button {
+  padding: 16px 20px;
+
+  @media (max-width: var.$mobile-width-only) {
+    width: 100%;
+  }
+
+  @include mixin.font-button-form;
+}

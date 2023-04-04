@@ -1,0 +1,226 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.order-form-group {
+  margin: 0;
+  padding: 0 0 11px;
+
+  border: none;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 45px 0 31px;
+  }
+}
+
+.order-form-group--alter-background {
+  @media (min-width: var.$tablet-width) {
+    background-color: var.$color-alter-background;
+  }
+}
+
+.order-form-group--radio {
+  padding: 0 0 19px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 0 24px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 0 0 23px;
+  }
+}
+
+.order-form-group--checkboxes {
+  padding: 0 0 11px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 50px 0 26px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 48px 0 28px;
+  }
+}
+
+.order-form-group--tel {
+  @media (min-width: var.$tablet-width) {
+    padding: 43px 0 0;
+  }
+}
+
+.order-form-group--email {
+  @media (min-width: var.$tablet-width) {
+    padding: 0 0 26px;
+  }
+}
+
+.order-form-group--textarea {
+  padding: 0 0 4px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 50px 0 44px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 50px 0 40px;
+  }
+}
+
+.order-form-group__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: var.$tablet-width) {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    column-gap: 37px;
+    align-items: start;
+  }
+}
+
+.order-form-group__wrapper--text {
+  @media (min-width: var.$desktop-width) {
+    padding: 0 225px 0 111px;
+    grid-template-columns: 80px 1fr;
+  }
+}
+
+.order-form-group__wrapper--tel {
+  @media (min-width: var.$desktop-width) {
+    padding: 0 225px 0 111px;
+    grid-template-columns: 77px 1fr;
+  }
+}
+
+.order-form-group__wrapper--email {
+  @media (min-width: var.$desktop-width) {
+    padding: 0 225px 0 111px;
+    grid-template-columns: 77px 1fr;
+  }
+}
+
+.order-form-group__wrapper--textarea {
+  @media (min-width: var.$desktop-width) {
+    padding: 0 225px 0 111px;
+    grid-template-columns: 77px 1fr;
+  }
+}
+
+.order-form-group__title {
+  width: 100%;
+
+  @include mixin.font-legend;
+
+  margin: 0 0 29px;
+
+  @media (max-width: var.$mobile-width-only) {
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 0;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    margin: 23px 0 0;
+  }
+}
+
+.order-form-group--radio .order-form-group__title {
+  margin: 0 0 31px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 17px 0 28px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 18px 0 28px 61px;
+  }
+}
+
+.order-form-group--checkboxes .order-form-group__title {
+  margin: 0 0 24px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 17px 0 24px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 20px 0 24px 61px;
+  }
+}
+
+.order-form-group--tel .order-form-group__title {
+  margin: 0 0 2px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 23px 0 20px;
+  }
+}
+
+.order-form-group--email .order-form-group__title {
+  margin: 0 0 4px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 23px 0 20px;
+  }
+}
+
+.order-form-group--textarea .order-form-group__title {
+  margin: 0 0 22px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 20px 0 22px;
+  }
+}
+
+.order-form-group__title::after {
+  @media (max-width: var.$mobile-width-only) {
+    content: "";
+
+    margin: 7px 0 0 18px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-width: 40px;
+    height: 1px;
+    background-color: var.$color-form-green;
+  }
+}
+
+.order-form-group--radio .order-form-group__title::after {
+  @media (max-width: var.$mobile-width-only) {
+    margin: 7px 0 0 23px;
+  }
+}
+
+.order-form-group--checkboxes .order-form-group__title::after {
+  @media (max-width: var.$mobile-width-only) {
+    margin: 7px 0 0 16px;
+  }
+}
+
+.order-form-group--tel .order-form-group__title::after {
+  @media (max-width: var.$mobile-width-only) {
+    margin: 7px 0 0 28px;
+  }
+}
+
+.order-form-group--textarea .order-form-group__title::after {
+  @media (max-width: var.$mobile-width-only) {
+    margin: 7px 0 0 21px;
+  }
+}
+
+.order-form-group--checkboxes .order-form-group__main-content {
+  @media (min-width: var.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 23px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    display: grid;
+    grid-template-columns: 222px 224px 1fr;
+    column-gap: 40px;
+    margin: 0 0 0 8px;
+  }
+}

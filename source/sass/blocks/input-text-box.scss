@@ -1,0 +1,41 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.input-text-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 23px;
+
+  @media (min-width: var.$tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 0 19px;
+  }
+}
+
+.input-text-box__label {
+  @include mixin.font-label;
+
+  @media (min-width: var.$tablet-width) {
+    flex-shrink: 0;
+    margin: 4px 26px 0 0;
+  }
+}
+
+.input-text-box:first-child .input-text-box__label {
+  @media (min-width: var.$tablet-width) {
+    margin: 4px 25px 0 0;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 4px 23px 0 0;
+  }
+}
+
+.input-text-box:nth-child(2) .input-text-box__label {
+  @media (min-width: var.$desktop-width) {
+    margin: 4px 24px 0 0;
+  }
+}

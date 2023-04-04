@@ -1,0 +1,43 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.textarea {
+  padding: 17px 15px;
+  width: 100%;
+  min-height: 142px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 15px;
+    min-height: 142px;
+  }
+
+  @include mixin.font-input;
+
+  border: 2px solid var.$color-main-text;
+
+  resize: none;
+}
+
+.textarea::placeholder {
+  @include mixin.font-placeholder;
+
+  font-family: "Verdana", sans-serif;
+}
+
+.textarea:not(:disabled):hover,
+.textarea:not(:disabled):focus {
+  font-family: var.$main-font;
+
+  border: 2px solid var.$color-form-green;
+  outline: none;
+}
+
+.textarea:not(:disabled):hover::placeholder,
+.textarea:not(:disabled):focus::placeholder {
+  font-family: var.$main-font;
+}
+
+.textarea:disabled {
+  opacity: 0.3;
+}

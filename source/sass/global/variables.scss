@@ -40,7 +40,7 @@ $color-alter-green: #56c3b2;
 $color-basic-green-hover: #59d5bc;
 $color-alter-green-hover: #46c1ae;
 $color-email-underline: #61d1ba;
-$color-modal-checkbox-checked: #62d1ba;
+$color-form-green: #62d1ba;
 $color-main-text: #444444;
 $color-border: #ececec;
 $color-alter-background: #f1f1f1;
@@ -53,6 +53,9 @@ $color-status-error: #ff0000;
 $shadow-main-menu-top: inset 0 1px 0 0 #ececec;
 $shadow-main-menu-bottom: inset 0 -1px 0 0 #ececec;
 $shadow-modal: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+$shadow-input-border: inset 0 -2px 0 0 #000000;
+$shadow-input-border-hover: inset 0 -2px 0 0 #62d1ba;
+$shadow-input-border-error: inset 0 -2px 0 0 #ff0000;
 $shadow-card-hover: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 $shadow-card-active: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 
