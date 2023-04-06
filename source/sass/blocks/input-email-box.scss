@@ -32,3 +32,7 @@
 .input-email-box__input-email:disabled + .input-email-box__icon {
   color: rgba(0, 0, 0, 0.1);
 }
+
+.input-email-box__icon {
+  pointer-events: none;
+}
