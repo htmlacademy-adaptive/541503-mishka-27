@@ -17,8 +17,6 @@
   right: 7px;
   bottom: 41px;
 
-  color: rgba(0, 0, 0, 0.3);
-
   @media (min-width: var.$tablet-width) {
     right: 26px;
     bottom: 36px;
@@ -27,6 +25,10 @@
   @media (min-width: var.$desktop-width) {
     right: 8px;
   }
+
+  color: rgba(0, 0, 0, 0.3);
+
+  pointer-events: none;
 }
 
 .input-tel-box__input-tel:not(:disabled):hover + .input-tel-box__icon,
@@ -36,8 +38,4 @@
 
 .input-tel-box__input-tel:disabled + .input-tel-box__icon {
   color: rgba(0, 0, 0, 0.1);
-}
-
-.input-tel-box__icon {
-  pointer-events: none;
 }
