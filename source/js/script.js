@@ -9,3 +9,15 @@ pageHeaderToggle.addEventListener('click', function() {
     mainNav.classList.add('page-header__main-nav--opened');
   }
 });
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 1,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews__slider-button--next',
+    prevEl: '.reviews__slider-button--prev',
+  },
+});

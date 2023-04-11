@@ -87,8 +87,6 @@
 }
 
 .video__video-content {
-  position: relative;
-
   @media (min-width: var.$tablet-width) {
     order: -1;
   }
@@ -96,6 +94,10 @@
   @media (min-width: var.$desktop-width) {
     grid-row: 1 / 3;
   }
+}
+
+.video__video-content-wrapper {
+  position: relative;
 }
 
 .video__control-button {

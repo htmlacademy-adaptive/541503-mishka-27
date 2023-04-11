@@ -15,6 +15,7 @@
     <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png" sizes="180x180">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href="css/style.min.css" rel="stylesheet">
     <title>HTML Academy: Мишка - главная страница</title>
   </head>
@@ -176,48 +177,50 @@
       <section class="reviews">
         <div class="reviews__wrapper container">
           <h2 class="reviews__section-title">Отзывы</h2>
-          <ul class="reviews__slides-list">
-            <li class="reviews__slides-item reviews__slides-item--active">
-              <blockquote class="reviews__slides-item-content">
-                <p class="reviews__slides-item-main-text-content">Я&nbsp;молодая мама, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
-                <cite class="reviews__slides-item-source">
-                  <span class="reviews__slides-item-source-name">Анастасия Красильникова</span>
-                  <a class="reviews__slides-item-source-link" href="#">@misssssiskras</a>
-                </cite>
-              </blockquote>
-            </li>
-            <li class="reviews__slides-item">
-              <blockquote class="reviews__slides-item-content">
-                <p class="reviews__slides-item-main-text-content">Я&nbsp;сестра молодой мамы, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
-                <cite class="reviews__slides-item-source">
-                  <span class="reviews__slides-item-source-name">Екатерина Красильникова</span>
-                  <a class="reviews__slides-item-source-link" href="#">@misssssiskras2</a>
-                </cite>
-              </blockquote>
-            </li>
-            <li class="reviews__slides-item">
-              <blockquote class="reviews__slides-item-content">
-                <p class="reviews__slides-item-main-text-content">Я&nbsp;двоюродная сестра молодой мамы, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
-                <cite class="reviews__slides-item-source">
-                  <span class="reviews__slides-item-source-name">Елена Красильникова</span>
-                  <a class="reviews__slides-item-source-link" href="#">@misssssiskras3</a>
-                </cite>
-              </blockquote>
-            </li>
-          </ul>
-          <div class="reviews__slider-controls">
-            <button class="reviews__slider-button reviews__slider-button--prev" type="button">
-              <svg class="reviews__slider-button-image" xmlns="http://www.w3.org/2000/svg" width="50" height="26" viewBox="0 0 50 26" role="img" aria-label="Большая стрелка влево." fill="none">
-                <use xlink:href="img/sprite.svg#huge-arrow-left"></use>
-              </svg>
-              <span class="visually-hidden">Предыдущий отзыв</span>
-            </button>
-            <button class="reviews__slider-button reviews__slider-button--next" type="button">
-              <svg class="reviews__slider-button-image" xmlns="http://www.w3.org/2000/svg" width="50" height="26" viewBox="0 0 50 26" role="img" aria-label="Большая стрелка вправо." fill="none">
-                <use xlink:href="img/sprite.svg#huge-arrow-right"></use>
-              </svg>
-              <span class="visually-hidden">Следующий отзыв</span>
-            </button>
+          <div class="swiper">
+            <ul class="reviews__slides-list swiper-wrapper">
+              <li class="reviews__slides-item reviews__slides-item--active swiper-slide">
+                <blockquote class="reviews__slides-item-content">
+                  <p class="reviews__slides-item-main-text-content">Я&nbsp;молодая мама, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
+                  <cite class="reviews__slides-item-source">
+                    <span class="reviews__slides-item-source-name">Анастасия Красильникова</span>
+                    <a class="reviews__slides-item-source-link" href="#">@misssssiskras</a>
+                  </cite>
+                </blockquote>
+              </li>
+              <li class="reviews__slides-item swiper-slide">
+                <blockquote class="reviews__slides-item-content">
+                  <p class="reviews__slides-item-main-text-content">Я&nbsp;сестра молодой мамы, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
+                  <cite class="reviews__slides-item-source">
+                    <span class="reviews__slides-item-source-name">Екатерина Красильникова</span>
+                    <a class="reviews__slides-item-source-link" href="#">@misssssiskras2</a>
+                  </cite>
+                </blockquote>
+              </li>
+              <li class="reviews__slides-item swiper-slide">
+                <blockquote class="reviews__slides-item-content">
+                  <p class="reviews__slides-item-main-text-content">Я&nbsp;двоюродная сестра молодой мамы, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
+                  <cite class="reviews__slides-item-source">
+                    <span class="reviews__slides-item-source-name">Елена Красильникова</span>
+                    <a class="reviews__slides-item-source-link" href="#">@misssssiskras3</a>
+                  </cite>
+                </blockquote>
+              </li>
+            </ul>
+            <div class="reviews__slider-controls">
+              <button class="reviews__slider-button reviews__slider-button--prev" type="button">
+                <svg class="reviews__slider-button-image" xmlns="http://www.w3.org/2000/svg" width="50" height="26" viewBox="0 0 50 26" role="img" aria-label="Большая стрелка влево." fill="none">
+                  <use xlink:href="img/sprite.svg#huge-arrow-left"></use>
+                </svg>
+                <span class="visually-hidden">Предыдущий отзыв</span>
+              </button>
+              <button class="reviews__slider-button reviews__slider-button--next" type="button">
+                <svg class="reviews__slider-button-image" xmlns="http://www.w3.org/2000/svg" width="50" height="26" viewBox="0 0 50 26" role="img" aria-label="Большая стрелка вправо." fill="none">
+                  <use xlink:href="img/sprite.svg#huge-arrow-right"></use>
+                </svg>
+                <span class="visually-hidden">Следующий отзыв</span>
+              </button>
+            </div>
           </div>
           <a class="reviews__button button button--size-s" href="#">Написать</a>
         </div>
@@ -340,6 +343,7 @@
       transform: translateX(-50%);
       filter: invert(1);
     "></div> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

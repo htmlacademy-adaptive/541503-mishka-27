@@ -23,6 +23,10 @@
   box-shadow: var.$shadow-card-hover;
 }
 
+.catalog-item:active .catalog-item__text-content {
+  box-shadow: var.$shadow-card-active;
+}
+
 .catalog-item__link-image:focus-within + .catalog-item__text-content {
   box-shadow: var.$shadow-card-hover;
 }
