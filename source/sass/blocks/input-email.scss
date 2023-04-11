@@ -1,0 +1,42 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.input-email {
+  padding: 17px 50px 17px 0;
+  width: 100%;
+
+  @include mixin.font-input;
+
+  border: none;
+  box-shadow: var.$shadow-input-border;
+
+  @media (min-width: var.$tablet-width) {
+    flex-grow: 1;
+    padding: 17px 50px 14px 18px;
+    width: 100%;
+
+    background-color: transparent;
+  }
+}
+
+.input-email::placeholder {
+  @include mixin.font-placeholder;
+}
+
+.input-email:not(:disabled):hover,
+.input-email:not(:disabled):focus {
+  box-shadow: var.$shadow-input-border-hover;
+
+  outline: none;
+}
+
+.input-email:disabled {
+  opacity: 0.3;
+  box-shadow: var.$shadow-input-border;
+}
+
+/*Для отображения стилей ошибки добавить соответствующему элементу input класс "input-email--is-error"*/
+.input-email--is-error {
+  box-shadow: var.$shadow-input-border-error;
+}

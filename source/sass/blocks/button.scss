@@ -66,3 +66,9 @@
     opacity: 0.3;
   }
 }
+
+.button--catalog {
+  @media (max-width: var.$mobile-width-only) {
+    max-width: 192px;
+  }
+}

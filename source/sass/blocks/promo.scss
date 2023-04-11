@@ -3,14 +3,18 @@
 @use "../global/mixins.scss" as mixin;
 
 .promo {
+  background-color: var.$color-header-alter-background;
+}
+
+.promo__wrapper {
   position: relative;
 
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 90px 0 0;
+  width: 100%;
   min-height: 506px;
-  max-width: 1150px;
 
   @media (min-width: var.$tablet-width) {
     padding: 88px 0 0;
@@ -23,7 +27,7 @@
   }
 }
 
-.promo::after {
+.promo__wrapper::after {
   @media (min-width: var.$tablet-width) {
     content: "";
 
@@ -95,7 +99,9 @@
 .promo__items-list {
   display: flex;
   flex-direction: column;
+
   @include mixin.list-reset;
+
   margin: 40px auto 0;
   width: 320px;
 

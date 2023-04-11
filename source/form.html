@@ -73,7 +73,7 @@
       </nav>
     </header>
     <main class="page__main">
-      <section class="page__order order">
+      <section class="order">
         <div class="order__title-wrapper">
           <h1 class="order__main-title">Вязание на&nbsp;заказ</h1>
           <h2 class="visually-hidden">Форма заказа</h2>
@@ -85,11 +85,11 @@
               <h3 class="order-form-group__title">Тип</h3>
               <div class="order-form-group__main-content">
                 <div class="order-form-group__box radio-input-box">
-                  <input class="visually-hidden" id="order-form-interior-accessory" name="products-type" value="interior-accessory" type="radio" checked>
+                  <input class="radio-input-box__radio-input visually-hidden" id="order-form-interior-accessory" name="products-type" value="interior-accessory" type="radio" checked>
                   <label class="radio-input-box__label" for="order-form-interior-accessory">Аксессуар для интерьера</label>
                 </div>
                 <div class="order-form-group__box radio-input-box">
-                  <input class="visually-hidden" id="order-form-kids-toys" name="products-type" value="kids-toys" type="radio">
+                  <input class="radio-input-box__radio-input visually-hidden" id="order-form-kids-toys" name="products-type" value="kids-toys" type="radio">
                   <label class="radio-input-box__label" for="order-form-kids-toys">Детская игрушка</label>
                 </div>
               </div>
@@ -100,34 +100,34 @@
               <h3 class="order-form-group__title">Цвет</h3>
               <div class="order-form-group__main-content">
                 <div class="order-form-group__box checkbox-box">
-                  <input class="visually-hidden" id="order-form-white" name="white" type="checkbox" checked>
+                  <input class="checkbox-box__checkbox visually-hidden" id="order-form-white" name="white" type="checkbox" checked>
                   <label class="checkbox-box__label" for="order-form-white">Белый</label>
                 </div>
                 <div class="order-form-group__box checkbox-box">
-                  <input class="visually-hidden" id="order-form-grey" name="grey" type="checkbox" checked>
+                  <input class="checkbox-box__checkbox visually-hidden" id="order-form-grey" name="grey" type="checkbox" checked>
                   <label class="checkbox-box__label" for="order-form-grey">Серый</label>
                 </div>
                 <div class="order-form-group__box checkbox-box">
-                  <input class="visually-hidden" id="order-form-tiffany" name="tiffany" type="checkbox">
+                  <input class="checkbox-box__checkbox visually-hidden" id="order-form-tiffany" name="tiffany" type="checkbox">
                   <label class="checkbox-box__label" for="order-form-tiffany">Тиффани</label>
                 </div>
                 <div class="order-form-group__box checkbox-box">
-                  <input class="visually-hidden" id="order-form-black" name="black" type="checkbox">
+                  <input class="checkbox-box__checkbox visually-hidden" id="order-form-black" name="black" type="checkbox">
                   <label class="checkbox-box__label" for="order-form-black">Черный</label>
                 </div>
                 <div class="order-form-group__box checkbox-box">
-                  <input class="visually-hidden" id="order-form-pink" name="pink" type="checkbox">
+                  <input class="checkbox-box__checkbox visually-hidden" id="order-form-pink" name="pink" type="checkbox">
                   <label class="checkbox-box__label" for="order-form-pink">Розовый</label>
                 </div>
                 <div class="order-form-group__box checkbox-box">
-                  <input class="visually-hidden" id="order-form-orange" name="orange" type="checkbox">
+                  <input class="checkbox-box__checkbox visually-hidden" id="order-form-orange" name="orange" type="checkbox">
                   <label class="checkbox-box__label" for="order-form-orange">Оранжевый</label>
                 </div>
               </div>
             </div>
           </fieldset>
           <fieldset class="order-form__group order-form-group">
-            <div class="order-form-group__wrapper container">
+            <div class="order-form-group__wrapper order-form-group__wrapper--text container">
               <h3 class="order-form-group__title">ФИО</h3>
               <div class="order-form-group__main-content">
                 <div class="order-form-group__box input-text-box">
@@ -145,8 +145,8 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="order-form__group order-form-group order-form-group--alter-background order-form-group--contact">
-            <div class="order-form-group__wrapper container">
+          <fieldset class="order-form__group order-form-group order-form-group--alter-background order-form-group--tel">
+            <div class="order-form-group__wrapper order-form-group__wrapper--tel container">
               <h3 class="order-form-group__title">Тел</h3>
               <div class="order-form-group__box input-tel-box">
                 <label class="visually-hidden" for="order-form-tel">Телефон:</label>
@@ -157,8 +157,8 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="order-form__group order-form-group order-form-group--alter-background order-form-group--contact">
-            <div class="order-form-group__wrapper container">
+          <fieldset class="order-form__group order-form-group order-form-group--alter-background order-form-group--email">
+            <div class="order-form-group__wrapper order-form-group__wrapper--email container">
               <h3 class="order-form-group__title" lang="en">E-mail</h3>
               <div class="order-form-group__box input-email-box">
                 <label class="visually-hidden" for="order-form-email" lang="en">E-mail:</label>
@@ -170,7 +170,7 @@
             </div>
           </fieldset>
           <fieldset class="order-form__group order-form-group order-form-group--textarea">
-            <div class="order-form-group__wrapper container">
+            <div class="order-form-group__wrapper order-form-group__wrapper--textarea container">
               <h3 class="order-form-group__title">Доп</h3>
               <div class="order-form-group__box textarea-box">
                 <label class="visually-hidden" for="order-form-wishes">Опишите все ваши пожелания к заказу</label>
@@ -178,17 +178,14 @@
               </div>
             </div>
           </fieldset>
-          <div class="order-form__footer">
-            <p class="order-form__footnote">
-              <sup class="order-form__footnote-star">*</sup>
-              <span class="order-form__footnote-inscription">Поля обязательны для заполнения</span>
-            </p>
+          <div class="order-form__footer container">
+            <p class="order-form__footnote"><sup class="order-form__footnote-star">*</sup>Поля обязательны для заполнения</p>
             <button class="order-form__button button button--size-m" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="index.html#header">
           <svg class="page-footer__logo-image" xmlns="http://www.w3.org/2000/svg" width="102" height="35" viewBox="0 0 102 35" role="img" aria-label="Логотип-надпись Мишка." fill="none">
@@ -233,6 +230,20 @@
         </a>
       </div>
     </footer>
+    <!--<div style="
+      position: absolute;
+      top: 0;
+      z-index: 100;
+      width: 1150px;
+      height: 2004px;
+      margin: 0 auto;
+      background-image: url('img/pixel-perfect/form-desktop.png');
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: invert(1);
+    "></div> -->
     <script src="js/script.js"></script>
   </body>
 </html>

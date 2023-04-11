@@ -1,0 +1,40 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.input-text {
+  padding: 17px 10px 16px 0;
+  width: 100%;
+
+  @include mixin.font-input;
+
+  border: none;
+  box-shadow: var.$shadow-input-border;
+
+  @media (min-width: var.$tablet-width) {
+    flex-grow: 1;
+    padding: 17px 18px 14px;
+    width: 300px;
+  }
+}
+
+.input-text::placeholder {
+  @include mixin.font-placeholder;
+}
+
+.input-text:not(:disabled):hover,
+.input-text:not(:disabled):focus {
+  box-shadow: var.$shadow-input-border-hover;
+
+  outline: none;
+}
+
+.input-text:disabled {
+  opacity: 0.3;
+  box-shadow: var.$shadow-input-border;
+}
+
+/*Для отображения стилей ошибки добавить соответствующему элементу input класс "input-text--is-error"*/
+.input-text--is-error {
+  box-shadow: var.$shadow-input-border-error;
+}

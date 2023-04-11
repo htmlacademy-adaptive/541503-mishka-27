@@ -1,0 +1,91 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.radio-input-box {
+  padding: 0 0 13px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 19px;
+  row-gap: 14px;
+  align-items: center;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 0 27px;
+  }
+}
+
+.radio-input-box__label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  @include mixin.font-label;
+}
+
+.radio-input-box__label::before {
+  content: "";
+
+  margin: 0 19px 0 0;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid var.$color-main-text;
+  border-radius: 50%;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 27px 0 4px;
+    width: 49px;
+    height: 49px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 0 30px 0 10px;
+  }
+}
+
+.radio-input-box__radio-input:checked + .radio-input-box__label::after {
+  content: "";
+
+  position: absolute;
+  left: 12px;
+  top: 12px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: var.$color-form-green;
+  border-radius: 50%;
+
+  @media (min-width: var.$tablet-width) {
+    left: 18px;
+    top: 14px;
+
+    width: 21px;
+    height: 21px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    left: 24px;
+    top: 14px;
+  }
+}
+
+.radio-input-box:hover .radio-input-box__label::before,
+.radio-input-box__radio-input:focus + .radio-input-box__label::before {
+  border: 2px solid var.$color-form-green;
+}
+
+.radio-input-box__radio-input:active + .radio-input-box__label::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.radio-input-box__radio-input:disabled + .radio-input-box__label {
+  opacity: 0.3;
+}
+
+.radio-input-box__radio-input:disabled + .radio-input-box__label::before {
+  border: 2px solid var.$color-main-text;
+}

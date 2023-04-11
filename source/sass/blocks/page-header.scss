@@ -23,15 +23,36 @@
   @media (min-width: var.$tablet-width) {
     display: grid;
     grid-template-columns: 370px 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
     margin: 0 auto;
-    max-width: 768px;
   }
 
   @media (min-width: var.$desktop-width) {
     grid-template-columns: 1fr 150px 1fr;
-    column-gap: 30px;
-    margin: 0 auto;
-    max-width: 1150px;
+    column-gap: 40px;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.page-header__main-nav::before {
+  @media (min-width: var.$tablet-width) {
+    content: "";
+
+    display: block;
+    height: 100%;
+
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+
+    background-color: var.$color-alter-background;
+  }
+}
+
+.page-header--alter-background .page-header__main-nav::before {
+  @media (min-width: var.$tablet-width) {
+    background-color: var.$color-header-alter-background;
   }
 }
 
@@ -39,10 +60,16 @@
   @media (min-width: var.$tablet-width) {
     content: "";
 
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    position: relative;
+    z-index: 11;
 
-    background-color: var.$color-header-alter-background;
+    align-self: start;
+    height: 1px;
+
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+
+    background-color: transparent;
     box-shadow: var.$shadow-main-menu-top;
   }
 }
@@ -191,6 +218,8 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     column-gap: 0;
+    margin: 0 0 0 auto;
+    max-width: 420px;
   }
 }
 
@@ -268,11 +297,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 0 auto 0 0;
+    max-width: 400px;
   }
 
   @media (min-width: var.$desktop-width) {
     grid-column: 3 / 4;
     justify-self: end;
+    margin: 0 auto 0 60px;
   }
 }
 
@@ -408,10 +440,12 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: flex;
+    flex-wrap: wrap;
 
     @include mixin.list-reset;
 
-    margin: 0 0 0 51px;
+    margin: 0 63px 0 auto;
+    max-width: 347px;
   }
 }
 
@@ -452,6 +486,11 @@
     display: block;
     margin: 0 50px 0 0;
     padding: 21px 0;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    grid-column: 3 / -1;
+    margin: 0 auto 0 179px;
   }
 
   &:hover,

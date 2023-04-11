@@ -392,6 +392,7 @@
   font-size: var.$font-mobile-l;
   line-height: var.$line-height-xxxxxs;
   font-weight: var.$bold;
+  text-transform: uppercase;
   color: var.$color-basic-green;
 
   @media (min-width: var.$tablet-width) {

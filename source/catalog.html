@@ -73,8 +73,8 @@
       </nav>
     </header>
     <main class="page__main">
-      <section class="page__catalog catalog">
-        <div class="catalog__title-wrapper container">
+      <section class="catalog">
+        <div class="catalog__title-wrapper">
           <h1 class="catalog__main-title">Каталог товаров</h1>
           <h2 class="visually-hidden">Основной контент каталога</h2>
         </div>
@@ -159,23 +159,25 @@
           </li>
         </ul>
       </section>
-      <section class="page__video video">
-        <div class="video__wrapper container">
+      <section class="video container">
+        <div class="video__wrapper">
           <h2 class="video__title">Процесс производства</h2>
           <div class="video__video-content">
-            <picture>
-              <source type="image/webp" media=" (min-width: 1150px) " srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
-              <source type="image/webp" media=" (min-width: 768px) " srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
-              <source media=" (min-width: 1440px) " srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-              <source media=" (min-width: 768px) " srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img class="video__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Вязаная корзинка светло-зеленая сверху и серая снизу.">
-            </picture>
-            <button class="video__control-button" type="button">
-              <svg class="video__control-button-image" xmlns="http://www.w3.org/2000/svg" width="101" height="77" viewBox="0 0 101 77" role="img" aria-label="Логотип Ютуба светло-зеленый (с белым)." fill="none">
-                <use xlink:href="img/sprite.svg#play-icon"></use>
-              </svg>
-            </button>
+            <div class="video__video-content-wrapper">
+              <picture>
+                <source type="image/webp" media=" (min-width: 1150px) " srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media=" (min-width: 768px) " srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+                <source media=" (min-width: 1440px) " srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media=" (min-width: 768px) " srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Вязаная корзинка светло-зеленая сверху и серая снизу.">
+              </picture>
+              <button class="video__control-button" type="button">
+                <svg class="video__control-button-image" xmlns="http://www.w3.org/2000/svg" width="101" height="77" viewBox="0 0 101 77" role="img" aria-label="Логотип Ютуба светло-зеленый (с белым)." fill="none">
+                  <use xlink:href="img/sprite.svg#play-icon"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="video__additional-content">
             <p class="video__text">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для&nbsp;вас подробное видео о&nbsp;том, как появляются наши товары.</p>
@@ -184,7 +186,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="index.html#header">
           <svg class="page-footer__logo-image" xmlns="http://www.w3.org/2000/svg" width="102" height="35" viewBox="0 0 102 35" role="img" aria-label="Логотип-надпись Мишка." fill="none">
@@ -229,7 +231,7 @@
         </a>
       </div>
     </footer>
-    <div class="page__modal-container modal-container modal-container--shown" style="width: 320px;">
+    <div class="modal-container">
       <div class="modal-container__modal">
         <h2 class="modal-container__section-title">Добавить в&nbsp;корзину</h2>
         <form class="modal-container__form modal-container-form" action="https://echo.htmlacademy.ru" method="post">
@@ -250,10 +252,24 @@
               </div>
             </div>
           </fieldset>
-          <button class="button button--modal" type="submit">Добавить</button>
+          <button class="modal-container__button button button--modal" type="submit">Добавить</button>
         </form>
       </div>
     </div>
+    <!--<div style="
+      position: absolute;
+      top: 0;
+      z-index: 100;
+      width: 1150px;
+      height: 2505px;
+      margin: 0 auto;
+      background-image: url('img/pixel-perfect/catalog-desktop.png');
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: invert(1);
+    "></div> -->
     <script src="js/script.js"></script>
   </body>
 </html>
