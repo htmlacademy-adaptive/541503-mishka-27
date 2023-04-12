@@ -127,10 +127,6 @@
   border: none;
 }
 
-.video__control-button-image {
-  transition: all 0.3s ease-in-out;
-}
-
 .video__control-button:hover .video__control-button-image,
 .video__control-button:focus .video__control-button-image {
   transform: translate(-50%, -50%) scale(1.2);
@@ -148,6 +144,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
+
+  transition: all 0.3s ease-in-out;
 
   transform: translate(-50%, -50%);
 }
