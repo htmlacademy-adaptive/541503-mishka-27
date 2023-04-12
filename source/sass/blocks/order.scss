@@ -41,7 +41,25 @@
 
     background-image: url("../img/zigzag-fill-tablet.svg");
     background-repeat: repeat-x;
-    background-size: 100% 24px;
+    background-size: 768px 24px;
+    background-position: center bottom;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: 0 auto;
+    width: 100%;
+    height: 34px;
+
+    background-image: url("../img/zigzag-fill-desktop-form.svg");
+    background-repeat: repeat-x;
+    background-size: 1150px 34px;
     background-position: center bottom;
   }
 }
@@ -57,25 +75,6 @@
     width: 1150px;
 
     text-align: center;
-  }
-}
-
-.order__main-title::after {
-  @media (min-width: var.$desktop-width) {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    margin: 0 auto;
-    width: 1150px;
-    height: 34px;
-
-    background-image: url("../img/zigzag-fill-desktop-form.svg");
-    background-size: 100% 34px;
-    background-position: center bottom;
   }
 }
 

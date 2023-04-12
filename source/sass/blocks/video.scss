@@ -100,6 +100,17 @@
   position: relative;
 }
 
+.video__image {
+  @media (max-width: var.$mobile-width-only) {
+    margin: 0 auto;
+    width: 260px;
+  }
+
+  @media (min-width: var.$tablet-width) and (max-width: var.$tablet-width-only) {
+    width: 668px;
+  }
+}
+
 .video__control-button {
   position: absolute;
   left: 0;
@@ -114,7 +125,9 @@
 
   background-color: transparent;
   border: none;
+}
 
+.video__control-button-image {
   transition: all 0.3s ease-in-out;
 }
 
@@ -159,10 +172,10 @@
 .video__text {
   @include mixin.font-video-text;
 
-  margin: 0 0 41px;
+  margin: 0 0 40px;
 
   @media (min-width: var.$tablet-width) {
-    margin: 0 0 40px;
+    margin: 0 0 39px;
   }
 
   @media (min-width: var.$desktop-width) {

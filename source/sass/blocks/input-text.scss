@@ -11,6 +11,8 @@
   border: none;
   box-shadow: var.$shadow-input-border;
 
+  transition: all 0.3s ease-in-out;
+
   @media (min-width: var.$tablet-width) {
     flex-grow: 1;
     padding: 17px 18px 14px;

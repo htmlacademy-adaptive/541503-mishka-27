@@ -10,14 +10,53 @@ pageHeaderToggle.addEventListener('click', function() {
   }
 });
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
-  slidesPerView: 1,
+const swiperEl = document.querySelector('.swiper');
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.reviews__slider-button--next',
-    prevEl: '.reviews__slider-button--prev',
-  },
-});
+if (swiperEl) {
+  const swiper = new Swiper(swiperEl, {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews__slider-button--next',
+      prevEl: '.reviews__slider-button--prev',
+    },
+  });
+};
+
+const modalContainer = document.querySelector('.modal-container');
+const weekProductButton = document.querySelector('.week-product__button');
+const catalogCartBtn = document.querySelector('.catalog-item__cart-btn');
+const modalButton = document.querySelector('.modal-container__button');
+
+if (modalContainer) {
+  const showModal = function() {
+    modalContainer.classList.add('modal-container--shown');
+  };
+
+  const hideModal = function() {
+    modalContainer.classList.remove('modal-container--shown');
+  };
+
+  if (weekProductButton) {
+    weekProductButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      showModal();
+    });
+  };
+
+  if (catalogCartBtn) {
+    catalogCartBtn.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      showModal();
+    });
+  };
+
+  document.addEventListener('keydown', function(evt) {
+    if (evt.code === 'Escape') {
+      hideModal();
+    };
+  });
+};

@@ -23,6 +23,8 @@
 
   color: var.$color-alter-black;
 
+  transition: all 0.3s ease-in-out;
+
   &:hover,
   &:focus {
     color: var.$color-alter-green-hover;

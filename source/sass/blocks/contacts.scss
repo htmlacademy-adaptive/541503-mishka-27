@@ -105,6 +105,8 @@
 }
 
 .contacts__email {
+  transition: all 0.3s ease-in-out;
+
   @include mixin.font-contacts;
 
   border-bottom: 1px solid var.$color-email-underline;

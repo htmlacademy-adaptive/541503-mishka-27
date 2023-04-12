@@ -35,6 +35,8 @@
   border: 2px solid var.$color-main-text;
   border-radius: 50%;
 
+  transition: all 0.3s ease-in-out;
+
   @media (min-width: var.$tablet-width) {
     margin: 0 27px 0 4px;
     width: 49px;
