@@ -8,7 +8,7 @@
   padding: 28px 0 51px;
 
   @media (min-width: var.$tablet-width) and (max-width: var.$tablet-width-only) {
-    padding: 83px 0 103px;
+    padding: 83px 0 133px;
 
     background-image: url("../img/reviews.png");
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@
 
   @media (min-width: var.$desktop-width) {
     margin: 0 auto;
-    padding: 78px 0 155px;
+    padding: 78px 0 153px;
     max-width: 1050px;
 
     background-image: url("../img/reviews.png");
@@ -109,27 +109,26 @@
   }
 }
 
-.reviews__slides-list {
-  @include mixin.list-reset;
-}
-
-.reviews__slides-item {
-  margin: 0 0 32px;
-
-  display: none;
+.reviews__swiper {
+  display: grid;
+  min-width: 0;
+  max-width: 100%;
 
   @media (min-width: var.$desktop-width) {
     margin: 0 0 32px 175px;
   }
 }
 
-.reviews__slides-item--active {
-  display: block;
+.reviews__slides-list {
+  min-width: 0;
+  max-width: 100%;
+
+  @include mixin.list-reset;
 }
 
 .reviews__slides-item-content {
   @include mixin.list-reset;
-  margin: 0 0 29px;
+  margin: 0 0 2px;
 }
 
 .reviews__slides-item-main-text-content {
@@ -161,6 +160,8 @@
   display: block;
   max-width: 160px;
 
+  transition: all 0.3s ease-in-out;
+
   @include mixin.font-reviews-source-link;
 
   &:hover,
@@ -174,19 +175,22 @@
 }
 
 .reviews__slider-controls {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 38px;
 
   @media (min-width: var.$tablet-width) {
     position: absolute;
-    right: 50px;
-    bottom: -39px;
+    right: 0;
+    bottom: -37px;
   }
 
   @media (min-width: var.$desktop-width) {
     right: 0;
-    bottom: 150px;
+    bottom: -35px;
   }
 }
 
@@ -196,6 +200,8 @@
 
   background-color: transparent;
 
+  transition: all 0.3s ease-in-out;
+
   @media (min-width: var.$tablet-width) {
     padding: 12px 18px 9px 17px;
 
@@ -203,8 +209,9 @@
   }
 }
 
-.reviews__slider-button--prev {
-  border-right: 1px solid transparent;
+.reviews__slider-button:hover,
+.reviews__slider-button:focus {
+  cursor: pointer;
 }
 
 .reviews__slider-button:hover .reviews__slider-button-image,
@@ -215,6 +222,10 @@
 .reviews__slider-button:active .reviews__slider-button-image,
 .reviews__slider-button:disabled .reviews__slider-button-image {
   opacity: 0.3;
+}
+
+.reviews__slider-button--prev {
+  border-right: 1px solid transparent;
 }
 
 .reviews__button {

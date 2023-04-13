@@ -16,13 +16,13 @@
 
   border: 2px solid var.$color-main-text;
 
+  transition: all 0.3s ease-in-out;
+
   resize: none;
 }
 
 .textarea::placeholder {
   @include mixin.font-placeholder;
-
-  font-family: "Verdana", sans-serif;
 }
 
 .textarea:not(:disabled):hover,

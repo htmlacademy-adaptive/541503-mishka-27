@@ -31,6 +31,8 @@
 .page-footer__logo {
   color: var.$color-basic-black;
 
+  transition: all 0.3s ease-in-out;
+
   @media (max-width: var.$mobile-width-only) {
     display: none;
   }
@@ -77,6 +79,8 @@
 
 .page-footer__html-academy-link-icon {
   color: var.$color-basic-green;
+
+  transition: all 0.3s ease-in-out;
 }
 
 .page-footer__html-academy-link:hover .page-footer__html-academy-link-icon,

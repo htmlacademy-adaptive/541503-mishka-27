@@ -100,6 +100,17 @@
   position: relative;
 }
 
+.video__image {
+  @media (max-width: var.$mobile-width-only) {
+    margin: 0 auto;
+    width: 260px;
+  }
+
+  @media (min-width: var.$tablet-width) and (max-width: var.$tablet-width-only) {
+    width: 668px;
+  }
+}
+
 .video__control-button {
   position: absolute;
   left: 0;
@@ -114,8 +125,6 @@
 
   background-color: transparent;
   border: none;
-
-  transition: all 0.3s ease-in-out;
 }
 
 .video__control-button:hover .video__control-button-image,
@@ -135,6 +144,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
+
+  transition: all 0.3s ease-in-out;
 
   transform: translate(-50%, -50%);
 }
@@ -159,10 +170,10 @@
 .video__text {
   @include mixin.font-video-text;
 
-  margin: 0 0 41px;
+  margin: 0 0 40px;
 
   @media (min-width: var.$tablet-width) {
-    margin: 0 0 40px;
+    margin: 0 0 39px;
   }
 
   @media (min-width: var.$desktop-width) {

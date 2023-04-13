@@ -11,6 +11,8 @@
   background-color: transparent;
   border: 2px solid var.$color-main-text;
 
+  transition: all 0.3s ease-in-out;
+
   &:hover,
   &:focus {
     color: var.$color-basic-white;
