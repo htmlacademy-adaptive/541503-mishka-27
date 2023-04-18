@@ -10,6 +10,7 @@
   @media (min-width: var.$tablet-width) and (max-width: var.$tablet-width-only) {
     padding: 83px 0 133px;
 
+    background-color: var.$color-basic-white;
     background-image: url("../img/reviews.png");
     background-repeat: no-repeat;
     background-position: left top;

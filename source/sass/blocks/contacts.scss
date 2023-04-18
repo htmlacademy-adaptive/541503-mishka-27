@@ -87,7 +87,7 @@
 }
 
 .contacts__list-description-item:nth-child(odd) {
-  @media (min-width: var.$tablet-width) and (max-width: var.$desktop-width) {
+  @media (min-width: var.$tablet-width) {
     margin: 0 52px 0 0;
   }
 }
@@ -183,7 +183,7 @@
     height: 457px;
   }
 
-  @media (min-width: var.$tablet-width) {
+  @media (min-width: var.$desktop-width) {
     position: absolute;
     right: -400px;
     bottom: 0;

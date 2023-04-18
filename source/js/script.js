@@ -28,35 +28,36 @@ if (swiperEl) {
 
 const modalContainer = document.querySelector('.modal-container');
 const weekProductButton = document.querySelector('.week-product__button');
-const catalogCartBtn = document.querySelector('.catalog-item__cart-btn');
-const modalButton = document.querySelector('.modal-container__button');
+const catalogCartButton = document.querySelector('.catalog-item__cart-button');
 
-if (modalContainer) {
-  const showModal = function() {
-    modalContainer.classList.add('modal-container--shown');
-  };
+const showModal = function() {
+  modalContainer.classList.add('modal-container--shown');
+};
 
-  const hideModal = function() {
-    modalContainer.classList.remove('modal-container--shown');
-  };
+const hideModal = function() {
+  modalContainer.classList.remove('modal-container--shown');
+};
 
-  if (weekProductButton) {
-    weekProductButton.addEventListener('click', function(evt) {
-      evt.preventDefault();
-      showModal();
-    });
-  };
-
-  if (catalogCartBtn) {
-    catalogCartBtn.addEventListener('click', function(evt) {
-      evt.preventDefault();
-      showModal();
-    });
-  };
-
-  document.addEventListener('keydown', function(evt) {
+const addModalListeners = function() {
+  document.addEventListener('keydown', (evt) => {
     if (evt.code === 'Escape') {
       hideModal();
     };
+  });
+};
+
+if (weekProductButton) {
+  weekProductButton.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    showModal();
+    addModalListeners();
+  });
+};
+
+if (catalogCartButton) {
+  catalogCartButton.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    showModal();
+    addModalListeners();
   });
 };
