@@ -52,6 +52,8 @@
 .catalog-item__text-content {
   padding: 28px 27px 22px;
 
+  border: 1px solid var.$color-border;
+
   @media (min-width: var.$tablet-width) {
     display: flex;
     flex-direction: column;
